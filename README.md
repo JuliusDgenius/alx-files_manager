@@ -20,16 +20,16 @@ Resources
 
 Read or watch:
 
-    - [Node JS getting started](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
-    - [Process API doc](https://node.readthedocs.io/en/latest/api/process/)
-    - [Express getting started](https://expressjs.com/en/starter/installing.html)
-    - [Mocha documentation](https://mochajs.org/)
-    - [Nodemon documentation](https://www.npmjs.com/package/nodemon)
-    - [MongoDB](https://www.mongodb.com/)
-    - [Bull](https://github.com/OptimalBits/bull)
-    - [Image thumbnail](https://www.npmjs.com/package/image-thumbnail)
-    - [Mime-Types](https://www.npmjs.com/package/mime-types)
-    - [Redis](https://redis.io/)
+   - [Node JS getting started](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
+- [Process API doc](https://node.readthedocs.io/en/latest/api/process/)
+- [Express getting started](https://expressjs.com/en/starter/installing.html)
+- [Mocha documentation](https://mochajs.org/)
+- [Nodemon documentation](https://www.npmjs.com/package/nodemon)
+- [MongoDB](https://www.mongodb.com/)
+- [Bull](https://github.com/OptimalBits/bull)
+- [Image thumbnail](https://www.npmjs.com/package/image-thumbnail)
+- [Mime-Types](https://www.npmjs.com/package/mime-types)
+- [Redis](https://redis.io/)
 
 # Learning Objectives
 
