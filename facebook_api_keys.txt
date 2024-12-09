@@ -1,0 +1,41 @@
+Steps to Obtain Facebook API Keys for a Company:
+
+1. Create a Meta Developer Account:
+   - Visit Meta for Developers: https://developers.facebook.com/
+   - Sign in with your Facebook account
+   - Register as a developer if you haven't already
+
+2. Create a Business Account:
+   - Go to Meta Business Suite: https://business.facebook.com/
+   - Create a new business account or use an existing one
+   - Ensure you have admin access to the business account
+
+3. Create an App:
+   - In the Meta Developers Console, click "Create App"
+   - Choose "Business" as the app type
+   - Fill in the app details, including the company name and contact information
+
+4. Link the App to Your Business Account:
+   - In the app settings, link the app to your business account
+   - This ensures that the app is recognized as part of your company's operations
+
+5. Get Your App Credentials:
+   - After creating the app, you'll receive an App ID and App Secret
+   - These credentials are used to authenticate API requests
+
+6. Configure App Settings:
+   - Set up the necessary permissions and features your app will use
+   - Complete any required app verification processes, especially if you need access to sensitive data
+
+7. Submit for App Review:
+   - If your app requires specific permissions (e.g., accessing user data), submit it for review
+   - Provide detailed information about how your app will use the data
+
+8. Implement Security Best Practices:
+   - Store your App ID and App Secret securely
+   - Use environment variables or secure vaults for sensitive information
+   - Regularly review and update your app's security settings
+
+9. Compliance and Policies:
+   - Ensure your app complies with Meta's platform policies
+   - Stay updated on any changes to the API or policy requirements
