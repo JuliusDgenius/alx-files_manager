@@ -9,7 +9,7 @@ class AppController {
   static getStatus(req, res) {
     const status = {
       redis: redisClient.isAlive(),
-      db: dbClient.isAlive()
+      db: dbClient.isAlive(),
     };
     return res.status(200).json(status);
   }
@@ -21,7 +21,7 @@ class AppController {
   static async getStats(req, res) {
     const stats = {
       users: await dbClient.nbUsers(),
-      files: await dbClient.nbFiles()
+      files: await dbClient.nbFiles(),
     };
     return res.status(200).json(stats);
   }

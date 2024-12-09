@@ -1,5 +1,6 @@
-import dbClient from '../utils/db';
 import bcrypt from 'bcrypt';
+import dbClient from '../utils/db';
+
 class UsersController {
   static async postNew(req, res) {
     const { email, password } = req.body;
