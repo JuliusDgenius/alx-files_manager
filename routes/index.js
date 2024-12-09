@@ -2,7 +2,6 @@ import { Router } from 'express';
 import AppController from '../controllers/AppController';
 import UsersController from '../controllers/UsersController';
 import AuthController from '../controllers/AuthController';
-import UserController from '../controllers/UserController';
 
 const router = Router();
 
@@ -22,6 +21,6 @@ router.get('/connect', AuthController.getConnect);
 router.get('/disconnect', AuthController.getDisconnect);
 
 // Retrieves the current user
-router.get('/users/me', UserController.getMe);
+router.get('/users/me', UsersController.getMe);
 
 export default router;
