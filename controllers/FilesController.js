@@ -127,6 +127,8 @@ class FilesController {
 
     // 2. Request Validation
     const { name, type, parentId = 0, isPublic = false, data } = req.body;
+    
+    // Validate required fields in correct order
     if (!name) {
       return res.status(400).json({ error: 'Missing name' });
     }
@@ -158,9 +160,9 @@ class FilesController {
       type,
       isPublic,
       parentId: parentId === 0 ? 0 : new ObjectId(parentId),
-      createdAt: new Date(),
     };
 
+    // Handle folder creation
     if (type === 'folder') {
       const result = await dbClient.db.collection('files').insertOne(fileDocument);
       fileDocument._id = result.insertedId;
@@ -178,6 +180,7 @@ class FilesController {
     const fileContent = Buffer.from(data, 'base64');
     fs.writeFileSync(localPath, fileContent);
 
+    // Add localPath to document and save to DB
     fileDocument.localPath = localPath;
     const result = await dbClient.db.collection('files').insertOne(fileDocument);
     fileDocument._id = result.insertedId;
