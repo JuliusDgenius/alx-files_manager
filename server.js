@@ -5,7 +5,7 @@ class Server {
   constructor() {
     this.app = express();
     this.port = process.env.PORT || 5000;
-    this.app.use(express.json());
+    this.app.use(express.json({ limit: '10mb' }));
     this.setupRoutes();
   }
 
