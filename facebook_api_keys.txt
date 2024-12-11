@@ -39,3 +39,80 @@ Steps to Obtain Facebook API Keys for a Company:
 9. Compliance and Policies:
    - Ensure your app complies with Meta's platform policies
    - Stay updated on any changes to the API or policy requirements
+
+# Guide to Obtain Google API Key for Company Use
+
+## Prerequisites
+- Google Cloud Console account with admin access
+- Company email address
+- Valid billing information (credit card)
+
+## Step-by-Step Instructions
+
+1. Access Google Cloud Console
+   https://console.cloud.google.com/
+
+2. Create New Project
+   - Click "Select a Project" dropdown at the top
+   - Click "New Project"
+   - Enter Project Name (e.g., "CompanyName-API")
+   - Select your organization
+   - Click "Create"
+
+3. Enable APIs
+   - Go to "APIs & Services" > "Library"
+   - Search for the APIs you need (e.g., Maps, Calendar, Drive)
+   - Click on each API and click "Enable"
+
+4. Configure OAuth Consent Screen
+   - Go to "APIs & Services" > "OAuth consent screen"
+   - Choose "Internal" if for company use only
+   - Fill in application name, support email, and developer contact
+   - Add authorized domains
+   - Click "Save and Continue"
+
+5. Create Credentials
+   - Go to "APIs & Services" > "Credentials"
+   - Click "Create Credentials"
+   - Select "API Key"
+   - Copy and save the generated API key
+
+6. Restrict API Key (Recommended)
+   - Click on the newly created API key
+   - Under "Application restrictions", set appropriate restrictions
+   - Under "API restrictions", select specific APIs
+   - Click "Save"
+
+7. Set Up Billing (If Required)
+   - Go to "Billing"
+   - Click "Link a billing account"
+   - Enter billing information
+   - Set budget alerts
+
+## Security Best Practices
+- Store API key in environment variables
+- Never commit API key to version control
+- Regularly rotate API keys
+- Monitor API usage
+- Set up billing alerts
+
+## Environment Variables Setup
+# Add to .env file
+GOOGLE_API_KEY=your_api_key_here
+
+## Testing API Key
+curl "https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY"
+
+## Additional Resources
+- Google Cloud Console: https://console.cloud.google.com/
+- API Documentation: https://developers.google.com/apis-explorer
+- Billing Documentation: https://cloud.google.com/billing/docs
+
+## Support
+For issues:
+- Google Cloud Support: https://cloud.google.com/support
+- Stack Overflow: https://stackoverflow.com/questions/tagged/google-api
+
+Google OAuth
+Project number: 422669463199
+Project ID: wastedump-oauthapi
